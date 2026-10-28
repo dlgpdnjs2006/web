@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Moirai+One&family=Nanum+Brush+Script&family=Single+Day&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: blueviolet;
+}
+
+.container{
+  width: 500px;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+/* 1. hsl / 2.rgb / 3.16진수/ 4.rgba  구글웹폰트 4개 */
+
+.ul1{
+  font-family: "Nanum Brush Script", cursive;
+  background-color: hsl(338, 64%, 80%);
+}
+.ul2{
+  font-family: "Single Day", cursive;
+  background-color: rgb(255, 205, 30);
+}
+.ul3{
+  font-family: "Gugi", sans-serif;
+  background-color: #ff00ff;
+}
+.ul4{
+  font:16px "Moirai One", system-ui;
+  background-color: rgba(255, 32, 50, 0.5);
+}
