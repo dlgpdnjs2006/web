@@ -19,7 +19,7 @@
       box-sizing: border-box;
       padding-left: 10px;
     }
-    ul li::before{
+    ul li::before{ /* 앞쪽에 가상요소를 만들어주는 코드 */
       content: '';
       display: block;
       width: 5px;
@@ -30,7 +30,7 @@
       left: 0;
       top: 22px;
     }
-    ul li:last-child::after{
+    ul li:last-child::after{ /* 뒤쪽에 가상요소를 만들어주는 코드 */
       content: 'new';
       color: red;
       font-size: 0.8rem;
