@@ -37,26 +37,25 @@ video {
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
-  overflow: hidden;
-  color: var(--color_text);
+  min-width: 320px; /* 최솟값 너비 설정 */
+  min-height: 100vh; /* 최솟값 높이설정 */
+  overflow: hidden; /* 박스가 넘칠경우 숨겨줌 */
+  color: var(--color_text); /* :root에 미리 설정한값 불러오기 */
   font: 16px/1.5 'Pretendard Variable', sans-serif;
-  letter-spacing: -0.25%;
+  letter-spacing: -0.25%; /* 자간설정 */
 }
 
 .wrap {
   position: fixed;
   inset: 0;
   overflow: hidden;
-  perspective: 1300px;
-  /* 원근감 */
-  background: conic-gradient(from 196deg at 67.89% 37.31%, #4B5772 0deg, #293488 360deg);
+  perspective: 1300px;/* 원근감 */
+  background: conic-gradient(from 196deg at 67.89% 37.31%, #4B5772 0deg, #293488 360deg);/* 피그마에서 만든 그라디언트 코드 */
 }
 
 .background_media {
   position: fixed;
-  inset: 0;
+  inset: 0; /* 너비전체 채우기 */
   z-index: 0;
   pointer-events: none;
 }
@@ -66,9 +65,9 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  opacity: 0.34;
-  filter: saturate(0.85) contrast(1.05) brightness(0.74);
+  object-fit: cover;/* 내용물(컨텐츠)를 자기크기에 딱 맞춤 */
+  opacity: 0.34; /* 투명정도 설정 */
+  filter: saturate(0.85) contrast(1.05) brightness(0.74); /* 교재442pg 참고 */
 }
 
 #circle {
@@ -80,8 +79,7 @@ body {
   top: 50%;
   margin-left: -300px;
   margin-top: -400px;
-  transform-style: preserve-3d;
-  /* 자식박스에 3d 효과를 주는 코드 */
+  transform-style: preserve-3d; /* 자식박스에 3d 효과를 주는 코드 */
   animation: cube_rotate 20s linear infinite;
 }
 
