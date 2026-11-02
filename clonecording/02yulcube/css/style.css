@@ -82,7 +82,7 @@ body {
   margin-top: -400px;
   transform-style: preserve-3d;
   /* 자식박스에 3d 효과를 주는 코드 */
-  /* animation: cube_rotate 2s linear infinite; */
+  animation: cube_rotate 20s linear infinite;
 }
 
 @keyframes cube_rotate {
@@ -504,8 +504,6 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0.72;
-  background: linear-gradient(180deg,transparent,rgba(0,0,0,0.7)44%);
-  padding: 160px 34px 34px;
 }
 
 .claim_overlay{
@@ -513,6 +511,8 @@ body {
   left: 40px;
   right: 40px;
   bottom: 40px;
+  background: linear-gradient(180deg,transparent,rgba(0,0,0,0.92) 44%);
+  padding: 160px 34px 34px;
 }
 
 
@@ -520,11 +520,11 @@ body {
 
 
 
-/* .face_1{transform: rotateY(0deg) translateZ(-764px);}
+.face_1{transform: rotateY(0deg) translateZ(-764px);}
 .face_2{transform: rotateY(45deg) translateZ(-764px);}
 .face_3{transform: rotateY(90deg) translateZ(-764px);}
 .face_4{transform: rotateY(135deg) translateZ(-764px);}
 .face_5{transform: rotateY(180deg) translateZ(-764px);}
 .face_6{transform: rotateY(225deg) translateZ(-764px);}
 .face_7{transform: rotateY(270deg) translateZ(-764px);}
-.face_8{transform: rotateY(315deg) translateZ(-764px);} */
+.face_8{transform: rotateY(315deg) translateZ(-764px);}
