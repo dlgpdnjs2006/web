@@ -68,8 +68,8 @@ img{
   height: 130px;
   background: url(../../images/seat2.png);
   position: absolute;
-  bottom: 3%;
-  right: 400px;
+  top: 50%;
+  right: 300px;
   animation: seatAni 3s infinite alternate;
 }
 
@@ -78,7 +78,7 @@ img{
     transform: translateX(0);
   }
   to{
-    transform: translateX(-350px);
+    transform: translateX(-300px);
   }
 }
 
