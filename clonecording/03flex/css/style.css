@@ -382,12 +382,12 @@ aside figure video {
     font-size: 32px;
   }
 
-  section article .inner .txt figure {
+  section article .inner figure {
     height: 180px;
     filter: saturate(100%);
   }
 
-  section article:hover .inner .txt figure {
+  section article:hover .inner figure {
     height: 180px;
   }
   aside{
