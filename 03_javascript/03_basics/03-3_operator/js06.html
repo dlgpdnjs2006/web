@@ -10,19 +10,19 @@
     let f = 10 > 20;
     let t = 10 < 20;
     let result;
-    result = f || f || f;
+    result = f || f || f; // 연산자 중 하나만 true여도 true가 됩니다.
     console.log(result);
 
-    result = f || t || f;
+    result = f || t || f; 
     console.log(result);
 
-    result = f && t && f;
+    result = f && t && f; //연산자가 모두 true일 경우에만 true
     console.log(result);
 
     result = t && t && t;
     console.log(result);
 
-    result = !result;
+    result = !result; //연산자의 반대값을 지정
     console.log(result);
 
   </script>
