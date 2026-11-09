@@ -13,17 +13,27 @@
     //forEach 메서드 사용하셔서
     //printArr 함수이름
     //배열데이터[0] : 1
+    /* 
     let sum = 0;
 
     function printArr(item, index) {
       document.write(`배열데이터 [${index}] : ${item}<br>`);
+      sum += item;
     }
     data.forEach(printArr);
+    document.write(sum); 
+    */
 
-     for(let data =1; data<=10; data++){
-      sum += data;
-    }
+   let sum = 0;
+   let printArr = (v,i) =>{
+    document.write(`배열데이터 [${i}] : ${v}<br>`);
+    sum +=v;
+   }
+    data.forEach(printArr);
     document.write(sum);
+     
+  
+
   </script>
 </body>
 
