@@ -10,12 +10,12 @@
 <body>
   <script>
     for (let i = 1; i <= 10; i++) {
-      if (i == 6) break;
+      if (i == 6) break; // 종료조건(i <= 10;)이 되기전에 멈출때 사용
       document.write(i + '<br>');
     }
     document.write('----------continue-----------<br>');
     for (let i = 1; i <= 10; i++) {
-      if(i %2 == 0) continue;
+      if(i %2 == 0) continue; //조건(i %2 == 0)에 맞는 값을 만나면 건너 뛰고 다음 값으로 넘어감
       document.write(i + '<br>');
     }
   </script>
