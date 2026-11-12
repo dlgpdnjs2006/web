@@ -17,8 +17,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   })
   //3)fromTo : 출발 도착 둘다 내가정함
   gsap.fromTo('.box_from_to', {
-    scale: 0,
+    //출발상태 : 크기 0
+    scale: 0, 
   }, {
+    //도착상태: 확대 + 회전
     scale: 1.2,
     rotate: 360,
     duration: 1.5,
@@ -27,11 +29,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   //2. 옵션 6총사 : 버튼 클릭 이벤트
   document.getElementById('btn_run').addEventListener('click', () => {
     gsap.to('.dot', {
-      x: 400,
-      duration: 2,
+      x: 400, // 오른쪽으로 400px
+      duration: 2, //2초간 이동
       delay: 0.2, //0.2초 쉬고 출발
       repeat: 1,//1번 반복(총 2번 실행) , 무한반복 (-1) , 반복없음(0) : 기본값
-      yoyo: true,//animation-direction:alternate 처럼 되돌아오기
+      yoyo: true, //animation-direction:alternate 처럼 되돌아오기
       ease: "bounce.out",//속도 곡선
     });
   });
@@ -84,9 +86,48 @@ document.addEventListener("DOMContentLoaded", (event) => {
       opacity: 0,
       duration: 0.8,
     }, '>0.2');
+  /*
+   <	이전 애니메이션 시작 시점
+   >	이전 애니메이션 끝 시점 
+  */
+
+  //5.스타일 변화
+  gsap.to('.hero', {
+    duration: 1.2,
+    backgroundColor: '#4caf50',
+    color: '#111',
+    scale: 1.2,
+    rotate: 10,
+    borderRadius: '30px',
+    repeat: -1,
+    yoyo: true,
+    ease: "power2.inOut",
+  });
+
+  //6.토글 애니메이션 (버튼 이벤트)
+  const panel_slide = gsap.to('.panel',{
+    x:240,
+    duration:0.5,
+    paused:true,
+  }).reverse();
+  //애니메이션을 반대로 실행 - GSAP Tween/Timeline 객체 전용 - 시작부터 역재생 상태로 세팅
+
+  document.getElementById('btn_toggle').addEventListener('click',()=>{
+    //지금 상태를 확인 -> 지금 상태를 반대로 바꾸기
+    panel_slide.reversed(! panel_slide.reversed());
+  });
+    //버튼 클릭할 때마다 true ↔ false로 바꿔주니까
+    //정방향 ↔ 역방향 실행이 계속 토글됨
+
     /*
-     <	이전 애니메이션 시작 시점
-     >	이전 애니메이션 끝 시점 
+         my_tween.reversed();  GSAP Tween/Timeline 전용 메서드
+         애니메이션 실행 방향 상태를 읽거나 바꾸기
+         true 또는 false 반환
+         true = 지금 "역재생 모드"
+         false = 지금 "정방향 모드"
+  
+        my_tween.reversed(true);  // 강제로 역재생
+        my_tween.reversed(false); // 강제로 정방향 실행
     */
 
 });//end
