@@ -238,41 +238,49 @@ header.on .right ul li:nth-child(3) {
   right: 22%;
 }
 
-header .ham_menu{
+header .ham_menu {
   width: 100%;
   display: none;
 }
-header.on .ham_menu{
+
+header.on .ham_menu {
   display: flex;
   flex: 1;
 }
-header .container{
+
+header .container {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
 }
-header .container h2{
+
+header .container h2 {
   font-size: 36px;
   font-weight: 600;
   margin-bottom: 1em;
 }
-header .container .all_con{
+
+header .container .all_con {
   width: 100%;
   color: var(--gray-03);
 }
-header .container .all_con ul.list{
+
+header .container .all_con ul.list {
   display: flex;
 }
-header .container .all_con ul.list>li{
+
+header .container .all_con ul.list>li {
   width: 25%;
   border-left: 1px solid rgba(242, 233, 182, 0.22);
   padding: 0 2em;
   margin: 1.5em 0;
 }
-header .container .all_con ul.list>li:last-child{
+
+header .container .all_con ul.list>li:last-child {
   border-right: 1px solid rgba(242, 233, 182, 0.22);
 }
-header .container .all_con ul.list>li button{
+
+header .container .all_con ul.list>li button {
   background: transparent;
   border: none;
   font-size: 26px;
@@ -284,7 +292,8 @@ header .container .all_con ul.list>li button{
   display: flex;
   position: relative;
 }
-header .container .all_con ul.list>li button::before{
+
+header .container .all_con ul.list>li button::before {
   content: '';
   display: inline-block;
   width: 0;
@@ -296,15 +305,18 @@ header .container .all_con ul.list>li button::before{
   z-index: -1;
   transition: 0.3s;
 }
-header .container .all_con ul.list>li:hover button::before{
+
+header .container .all_con ul.list>li:hover button::before {
   width: 100%;
 }
-header .container .all_con ul.list>li ul{
+
+header .container .all_con ul.list>li ul {
   margin-top: 2em;
   line-height: 2.4;
   font-size: 16px;
 }
-header .container .all_con ul.list>li ul li:hover a{
+
+header .container .all_con ul.list>li ul li:hover a {
   color: var(--yul-brand-amber);
 }
 
@@ -328,7 +340,8 @@ a.af::after {
 main {
   width: 100%;
 }
-main .more{
+
+main .more {
   display: flex;
   height: 72px;
   gap: 10px;
@@ -339,20 +352,21 @@ main .more{
   justify-content: space-between;
   align-items: center;
 }
-main .more.border{
+
+main .more.border {
   background: transparent;
-  color:  var(--gray-00);
+  color: var(--gray-00);
   border: 1px solid var(--gray-00);
   transition: 0.3s;
 }
-main .more.border:hover{
+
+main .more.border:hover {
   background: var(--gray-00);
   color: var(--yul-brand-ink);
 }
 
 .main_visual {
   height: 100vh;
-  background: #ccc;
   padding-top: 100px;
 }
 
@@ -361,80 +375,115 @@ main .more.border:hover{
   display: flex;
   flex-direction: column;
 }
-.main_visual .swiper{
- flex: 1;
- width: 100%;
- border-radius: var(--round);
- background: red;
+
+.main_visual .swiper {
+  flex: 1;
+  width: 100%;
+  border-radius: var(--round);
 }
-.main_visual .swiper li{
+
+.main_visual .swiper li {
   position: relative;
   display: flex;
   align-items: flex-end;
-  background:  no-repeat center/cover url(../img/yul-main-hero-ai-coding.png);
+  background: no-repeat center/cover url(../img/yul-main-hero-ai-coding.png);
 }
-.main_visual .swiper li.slide1{
+
+.main_visual .swiper li.slide1 {
   background-image: url(../img/yul-main-hero-education.png);
 }
-.main_visual .swiper li.slide2{
+
+.main_visual .swiper li.slide2 {
   background-image: url(../img/yul-main-hero-design.png);
 
 }
-.main_visual .swiper li.slide3{
+
+.main_visual .swiper li.slide3 {
   background-image: url(../img/yul-main-hero-ai-coding.png);
 
 }
-.main_visual .swiper li.slide4{
+
+.main_visual .swiper li.slide4 {
   background-image: url(../img/yul-main-hero-publishing.png);
 
 }
-.main_visual .swiper li .txt_area{
+
+.main_visual .swiper li .txt_area {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   height: 600px;
   padding: 100px 0 100px 100px;
-  /* background: #ccc; */
   align-items: flex-start;
   flex-shrink: 0;
-   text-shadow: 0 3px 24px rgba(59, 46, 23, 0.72);
-   color: var(--gray-00);
+  text-shadow: 0 3px 24px rgba(59, 46, 23, 0.72);
+  color: var(--gray-00);
 }
-.sub_txt{
+
+.sub_txt {
   color: var(--gray-02);
   font-size: 20px;
   line-height: 1;
   font-weight: 600;
 }
-.txt_area .tit{
+
+.txt_area .tit {
   font-size: 52px;
   font-weight: 700;
   line-height: 1.3;
   padding: 32px 0 38px;
 }
-.txt_area .txt{
+
+.txt_area .txt {
   color: var(--gray-02);
   font-size: 22px;
   font-weight: 300;
   line-height: 1.3;
   opacity: 0.9;
 }
-.txt_area .more{
+
+.txt_area .more {
   margin-top: auto;
 }
 
 
 
-.main_visual .pager{
-   width: 300px;
+.main_visual .pager {
+  width: 300px;
   height: 100px;
   display: flex;
-  background: lightcoral;
   align-items: center;
   justify-content: space-between;
   align-self: center;
 }
+
+.pager button {
+  border: 0;
+  background: transparent;
+  font-size: 2.5rem;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.pager button:hover {
+  color: var(--black);
+}
+
+.pager .box {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.pager .box .btn_box {
+  cursor: pointer;
+  padding: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .info {
   padding: 80px 0 100px;
@@ -444,13 +493,205 @@ main .more.border:hover{
   height: 140px;
   background: var(--gray-02);
   border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 34px;
+}
+
+.article_top .slide {
+  max-width: 1300px;
+  width: calc(100% - 210px);
+  height: 80px;
+}
+
+.article_top .slide .swiper {
+  height: 100%;
+}
+
+.article_top .slide .swiper li {
+  height: 100%;
+}
+
+.article_top .slide .swiper li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-inline: 20px;
+}
+
+.article_top .slide .swiper li a .txt {
+  width: 67%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.article_top .more span {
+  font-size: 28px;
+  font-weight: 300;
 }
 
 .article_bottom {
   height: 900px;
   margin-top: 100px;
-  background: blueviolet;
+  display: flex;
+  gap: 20px;
 }
+
+.article_bottom .box {
+  border-radius: var(--round);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s;
+  height: 100%;
+}
+
+.article_bottom .box em {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.article_bottom .box p {
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1.1;
+  width: 320px;
+}
+
+.article_bottom .box .txt_b {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  transition: 0.6s;
+  transform: translateY(102px);
+}
+.article_bottom .box:hover .txt_b{
+  transform: translateY(0);
+}
+
+.article_bottom .box3 .txt_b{
+  transform: translateY(0);
+} 
+
+.article_bottom .box .txt_b span {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+
+.article_bottom .box .txt_b a.more {
+  height: 56px;
+  font-size: 16px;
+  color: var(--gray-08);
+  margin-top: 46px;
+  max-width: 180px;
+}
+
+
+
+.article_bottom img {
+  position: absolute;
+}
+
+.article_bottom .box1 {
+  flex: 1;
+  background:
+    linear-gradient(180deg, rgba(23, 36, 59, .18) 0%, rgba(23, 36, 59, .68) 100%),
+    url(../img/yul-info-channel.png) center/cover;
+  color: var(--gray-00);
+  transition: .3s;
+}
+.article_bottom .box1:hover{
+  flex: 1.5;
+}
+.article_bottom .box1 p{
+  font-size: 70px;
+}
+
+
+
+.article_bottom .box_all {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article_bottom .box_all>div {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+
+.article_bottom .box2 {
+  flex: 2;
+  background: var(--yul-brand-orange);
+  color: var(--gray-00);
+}
+.article_bottom .box2 img{
+  width: 340px;
+  top: 0;
+  right: 80px;
+  transition: .3s;
+}
+.article_bottom .box2:hover img{
+  right: 30px;
+}
+
+.article_bottom .box3 {
+  flex: 1;
+  background: var(--yul-brand-orange-soft);
+  transition: .3s;
+}
+.article_bottom .box3:hover{
+  flex: 1.5 0 0;
+}
+.article_bottom .box3 img{
+  right: 20px;
+  bottom: -50px;
+  width: 200px;
+  transition: 0.3s;
+}
+.article_bottom .box3:hover img{
+  right: 0;
+  bottom: 0;
+}
+
+.article_bottom .box4 {
+  flex: 1;
+  background: var(--yul-brand-yellow-soft);
+  transition: .3s;
+}
+.article_bottom .box4:hover{
+  flex: 1.5 0 0;
+}
+
+.article_bottom .box5 {
+  flex: 2;
+  background: var(--yul-brand-yellow);
+}
+.article_bottom .box5 img{
+  right: 70px;
+  bottom: 0;
+  width: 330px;
+  transition: .3s;
+  transform: translateY(30px);
+}
+.article_bottom .box5:hover img{
+  right: 40px;
+  transform: translateY(0);
+}
+
 
 .motion {
   width: 100%;
