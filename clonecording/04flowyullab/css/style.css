@@ -1125,7 +1125,7 @@ main .more.border:hover {
   border-radius: var(--round);
   flex: 1;
   box-shadow: var(--yul-brand-shadow2);
-  transition: background-color .4s;
+  transition: background-color .4s; /* 속성을 지정해서 그것만 시간을 지정 할수 있음 */
 }
 .contact .inner article:hover{
   background-color: var(--yul-brand-orange);

@@ -86,15 +86,15 @@ const contentsSlide = new Swiper('.contents .swiper', {
     delay: 0,
     disableOnInteraction: false,
   },
-  on:{
+  on: {
     //계속 같은 속도로 흐르게 linear를 적용
-    init:function(){
-      this.wrapperEl.style.transitionTimingFunction ='linear';
+    init: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
     },
-    slideChangeTransitionStart:function(){
-      this.wrapperEl.style.transitionTimingFunction ='linear';
+    slideChangeTransitionStart: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
     },
-  }  
+  }
 });
 
 //blog 영역의 가로자동 슬라이드
@@ -111,14 +111,14 @@ const blogSlide = new Swiper('.blog .swiper', {
     delay: 0,
     disableOnInteraction: false,
   },
-  on:{
+  on: {
     //계속 같은 속도로 흐르게 linear를 적용
-    init:function(){
-      this.wrapperEl.style.transitionTimingFunction ='linear';
+    init: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
     },
-    slideChangeTransitionStart:function(){
-      this.wrapperEl.style.transitionTimingFunction ='linear';
+    slideChangeTransitionStart: function () {
+      this.wrapperEl.style.transitionTimingFunction = 'linear';
     },
-  }  
+  }
 });
 
