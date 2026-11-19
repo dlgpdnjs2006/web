@@ -22,13 +22,13 @@ window.addEventListener('scroll', () => {
   // console.log(currentScrollY);
 
   //지금위치가 직전 위치보다 크면 아래로 스크롤중
-  if(currentScrollY >lastScrollY){
+  if (currentScrollY > lastScrollY) {
     header.style.top = '-100px';
-  }else{
+  } else {
     header.style.top = 0;
   }
   //다음 스크롤때 비교 할수 있도록 위치 저장
-  lastScrollY =currentScrollY;
+  lastScrollY = currentScrollY;
 });
 
 //메인 히어로
@@ -112,6 +112,27 @@ const contentsSlide = new Swiper('.contents .swiper', {
     delay: 0,
     disableOnInteraction: false,
   },
+
+  //화면크기별로 카드 사이 간격과 흐르는 속도를 바꿉니다
+  breakpoints: {
+    0: {
+      speed: 6500,
+      spaceBetween: 16,
+    },
+    501: {
+      speed: 7200,
+      spaceBetween: 20,
+    },
+    769: {
+      speed: 8200,
+      spaceBetween: 24,
+    },
+    1161: {
+      speed: 9000,
+      spaceBetween: 30,
+    },
+  },
+
   on: {
     //계속 같은 속도로 흐르게 linear를 적용
     init: function () {
@@ -137,6 +158,24 @@ const blogSlide = new Swiper('.blog .swiper', {
     delay: 0,
     disableOnInteraction: false,
   },
+  breakpoints: {
+    0: {
+      speed: 8000,
+      spaceBetween: 16,
+    },
+    501: {
+      speed: 9000,
+      spaceBetween: 20,
+    },
+    769: {
+      speed: 10500,
+      spaceBetween: 24,
+    },
+    1161: {
+      speed: 12000,
+      spaceBetween: 30,
+    },
+  },
   on: {
     //계속 같은 속도로 흐르게 linear를 적용
     init: function () {
@@ -147,6 +186,25 @@ const blogSlide = new Swiper('.blog .swiper', {
     },
   }
 });
+
+//화면 크기가 바뀌면 카드 너비롸 슬라이드 위치가 달라집니다.
+//그래서 Swiper에게 '다시 계산해'라고 알려주는 함수
+const updateResponsiveSlides = () => {
+  [mainSlide, infoSlide, contentsSlide, blogSlide].forEach((slide) => {
+    slide.update();
+  });
+}
+
+//리사이즈 중에는 계산을 계속하지 않고, 잠깐 멈춘뒤 한번만 계산합니다
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(updateResponsiveSlides, 120);
+});
+
+
+
+
 
 document.querySelector('.select_box button').addEventListener('click', () => {
   document.querySelector('.select_box').classList.toggle('on');
