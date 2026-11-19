@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>154페이지 문제</title>
+  <style>
+    form{
+      width: 500px;
+    }
+    div{
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+    div input{
+      padding: 5px 15px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>배송정보</legend>
+      <ul>
+        <li>
+          <label for="pro">주문 상품</label>
+          <input type="text" id="pro" value="상품용 3kg">
+          <!-- <label>주문 상품<input type="text" value="상품용 3kg"></label> -->
+        </li>
+        <li>
+          <label for="name">이름</label>
+          <input type="text" id="name" value="고경희" required>
+          <!-- <label>이름<input type="text" value="고경희"></label> -->
+        </li>
+        <li>
+          <label for="addr">배송 주소</label>
+          <input type="text" id="addr" required>
+        </li>
+        <li>
+          <label for="mail">이메일</label>
+          <input type="email" id="mail">
+        </li>
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone" placeholder="하이폰 빼고 입력해 주세요(01011111234)" required>
+        </li>
+        <li>
+          <label for="time">배송 지정</label>
+          <input type="date" id="time">
+          <small>(주문일로부터 최소 3일 이후)</small>
+        </li>
+      </ul>
+    </fieldset> 
+    <div>
+      <input type="submit" value="주문하기">
+      <input type="reset" value="취소하기">
+    </div>
+  </form>
+</body>
+</html>

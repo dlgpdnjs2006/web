@@ -204,8 +204,6 @@ window.addEventListener('resize', () => {
 
 
 
-
-
 document.querySelector('.select_box button').addEventListener('click', () => {
   document.querySelector('.select_box').classList.toggle('on');
 });

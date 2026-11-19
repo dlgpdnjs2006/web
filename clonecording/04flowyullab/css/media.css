@@ -177,8 +177,6 @@
 
   .article_bottom .box p {
     font-size: 40px;
-    font-weight: 500;
-    line-height: 1.1;
     width: 180px;
   }
 
@@ -188,11 +186,11 @@
 
 
   .article_bottom .box:hover .txt_b {
-    transform: translateY(0px);
+    transform: translateY(102px);
   }
 
   .article_bottom .box3:hover .txt_b {
-    transform: translateY(102px);
+    transform: translateY(0px);
   }
 
   .article_bottom .box .txt_b span {
