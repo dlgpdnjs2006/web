@@ -108,6 +108,7 @@
     width: 100%;
     margin: 0;
     border: 0;
+    padding-inline: 1vw;
   }
 
   header .container .all_con ul.list>li:last-child {
@@ -123,6 +124,9 @@
     padding-inline: 20px;
   }
 
+  header .container .all_con ul.list>li.on button{
+    border-bottom-color: transparent;
+  }
   header .container .all_con ul.list>li button::before {
     content: '>';
     background: transparent;
@@ -131,6 +135,7 @@
     transform: rotate(90deg) scaleY(1.4);
     font-weight: 100;
     width: auto;
+    font-family: var(--font-Eng2);
   }
 
   header .container .all_con ul.list>li.on button::before {
@@ -151,9 +156,15 @@
 
   header .container .all_con ul.list>li.on ul {
     display: block;
+    padding: 1vw 20px 2vw;
+    border-bottom: 1px solid var(--gray-06);
   }
 
   /* main_visual */
+  .main_visual {
+    padding-top: 64px;
+  }
+
   .txt_area .tit {
     font-size: 42px;
   }
@@ -254,7 +265,7 @@
   }
 
   .learning {
-    padding: 0 0 56px;
+    padding: 0 20px 56px;
   }
 
   .learning ul {
@@ -398,13 +409,275 @@
     padding: 32px;
     flex-basis: 124px;
   }
-  .contact .inner article a{
+
+  .contact .inner article a {
     background-size: 53px;
   }
-  .contact .inner article a h3{
+
+  .contact .inner article a h3 {
     font-size: 16px;
   }
-  .contact .inner article a p{
+
+  .contact .inner article a p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  header .right a {
+    display: none;
+  }
+
+  .main_visual {
+    height: calc(100vh - 64px);
+    min-height: 500px;
+    max-height: 744px;
+  }
+
+  .main_visual .swiper li .txt_area {
+    height: 100%;
+    padding: 80px 0 80px 80px;
+  }
+
+  .info {
+    padding: 56px 0;
+  }
+
+  .article_top {
+    height: 50px;
+  }
+
+  .article_top .slide {
+    width: 100%;
+    height: 100%;
+    min-height: 32px;
+    overflow: hidden;
+  }
+
+  .article_top .slide .swiper li a {
+    font-size: 1rem;
+  }
+
+  .article_top .more {
+    display: none;
+  }
+
+  .curriculum .inner {
+    height: 220px;
+  }
+
+  .curriculum .inner a {
+    padding: 6vw 5vw;
+  }
+
+  .curriculum .inner a .txt_box {
+    width: auto;
+  }
+
+  .curriculum p {
+    margin-bottom: 0;
+    font-size: 2.5vw;
+  }
+
+  .curriculum span {
+    display: none;
+  }
+
+  .curriculum .list_box {
+    width: 52%;
+  }
+
+  .curriculum .list_box li {
+    font-size: 1.7vw;
+    min-height: auto;
+  }
+
+  footer {
+    padding: 24px 16px 40px;
+    font-size: 14px;
+  }
+
+  footer .f_top .logo_box {
+    max-width: 100%;
+    gap: 16px;
+  }
+
+  footer .f_top .logo_box .logo {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  footer .f_top .logo_box .logo_b {
+    max-width: 100%;
+    gap: 16px;
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  footer .f_top .btn_box {
+    max-width: 100%;
+    gap: 8px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .sns a {
+    width: 36px;
+    height: 36px;
+  }
+
+  .sns a img {
+    width: 50%;
+  }
+
+  .select_box {
+    width: 132px;
+    height: 36px;
+  }
+
+  .select_box button {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .top a {
+    width: 80px;
+    height: 36px;
+    font-size: 13px;
+    padding: 0 12px;
+  }
+
+  footer .f_bottom {
+    margin-top: 24px;
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  .main_visual {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .main_visual .swiper li .txt_area {
+    height: 80%;
+    padding: 40px;
+  }
+
+  .txt_area .sub_txt {
+    font-size: 2.6vw;
+  }
+
+  .txt_area .tit {
+    font-size: 5.5vw;
+  }
+
+  .txt_area .txt {
+    font-size: 2.75vw;
+    line-height: 1.4;
+  }
+
+  main .more {
+    height: auto;
+    padding: 14px 30px;
+    font-size: clamp(2.8vw, 1rem, 3vw);
+  }
+
+  .main_visual .pager {
+    height: 6vh;
+    font-size: 12px;
+    padding-bottom: 1vh;
+  }
+
+  .main_visual .pager button {
+    font-size: 2rem;
+  }
+
+  .article_top {
+    height: 6vw;
+    padding: 6vw 4vw
+  }
+
+  .article_top .slide .swiper li a {
+    font-size: 3vw;
+    gap: 10px;
+    padding-inline: 1vw;
+  }
+
+  .article_top .slide .swiper li a .txt {
+    flex: 1;
+  }
+
+  .article_top .slide .swiper li a .day {
+    display: none;
+  }
+
+  .article_bottom {
+    margin-top: 5vh;
+    padding-inline: 0;
+  }
+
+  .learning,
+  .con .inner,
+  .curriculum,
+  .contact .inner {
+    padding-inline: 0;
+  }
+
+  .curriculum .inner a {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .curriculum .inner a .txt_box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .curriculum p {
+    font-size: 3vw;
+
+  }
+
+  .curriculum .list_box {
+    width: 100%;
+    height: auto;
+  }
+
+  .curriculum .list_box li {
+    height: 34px;
+  }
+
+  footer .f_top {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  footer .f_top .logo_box {
+    order: 2;
+  }
+
+  footer .f_top .btn_box {
+    order: 1;
+  }
+
+  footer .f_top .btn_box .top {
+    margin-left: auto;
+  }
+
+  footer .f_bottom {
+    flex-direction: column;
+  }
+
+  footer .f_bottom .f_con1 span:nth-child(1) {
+    padding-inline-start: 0;
+  }
+
+  footer .f_bottom .copy {
+    text-align: left;
+    margin-top: 10px;
   }
 }
