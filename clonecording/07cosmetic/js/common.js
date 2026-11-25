@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  //https://michalsnik.github.io/aos/ 에서코드 받아옴
   //  AOS 초기화 (스크롤 애니메이션)
   AOS.init({
     disable: false,                //  AOS 끄지 않기! → 애니메이션 작동하게 두기
